@@ -1,4 +1,7 @@
 {
+    "LocaleSwitcher":{
+      "language": "Language:"
+    },
     "Index": {
       "title": "Hello world!"
     },
