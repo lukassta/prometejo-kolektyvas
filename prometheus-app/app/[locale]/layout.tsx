@@ -1,3 +1,6 @@
+import Header from 'components/Header';
+import Footer from 'components/Footer';
+
 export default function LocaleLayout({
     children,
     params: {locale}
@@ -7,7 +10,13 @@ export default function LocaleLayout({
   }) {
     return (
       <html lang={locale}>
-        <body>{children}</body>
+        <body>
+          <Header />
+          <main>
+            {children}
+          </main>
+          <Footer />
+        </body>
       </html>
     );
   }
