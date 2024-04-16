@@ -4,5 +4,8 @@
     },
     "AboutUs": {
       "title": "About us"
+    },
+    "NotFound": {
+      "description": "404: Page not found"
     }
 }

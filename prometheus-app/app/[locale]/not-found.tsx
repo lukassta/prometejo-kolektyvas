@@ -1,13 +1,9 @@
-'use client';
+import {useTranslations} from 'next-intl';
 
-import Error from 'next/error';
+export default function NotFoundPage() {
+  const t = useTranslations('NotFound');
 
-export default function NotFound() {
   return (
-    <html lang="en">
-      <body>
-        <Error statusCode={404} />
-      </body>
-    </html>
+    <p>{t('description')}</p>
   );
 }

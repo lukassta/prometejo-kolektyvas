@@ -4,5 +4,8 @@
     },
     "AboutUs": {
       "title": "Apie mus"
+    },
+    "NotFound": {
+      "description": "404: Puslapis nerastas"
     }
 }
