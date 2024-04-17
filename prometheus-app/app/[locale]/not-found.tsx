@@ -1,9 +1,7 @@
-import {useTranslations} from 'next-intl';
+import { useTranslations } from "next-intl";
 
 export default function NotFoundPage() {
-  const t = useTranslations('NotFound');
+  const t = useTranslations("NotFound");
 
-  return (
-    <p>{t('description')}</p>
-  );
+  return <p>{t("description")}</p>;
 }
