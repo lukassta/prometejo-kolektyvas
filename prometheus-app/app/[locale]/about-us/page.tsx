@@ -1,6 +1,6 @@
-import {useTranslations} from 'next-intl';
- 
+import { useTranslations } from "next-intl";
+
 export default function Index() {
-  const t = useTranslations('AboutUs');
-  return <h1>{t('title')}</h1>;
+  const t = useTranslations("AboutUs");
+  return <h1>{t("title")}</h1>;
 }

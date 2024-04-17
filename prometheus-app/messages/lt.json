@@ -1,0 +1,20 @@
+{
+  "LocaleSwitcher": {
+    "language": "Kalba:"
+  },
+  "Index": {
+    "title": "Labas pasauli!"
+  },
+  "AboutUs": { "title": "Apie mus" },
+  "NotFound": {
+    "description": "404: Puslapis nerastas"
+  },
+  "Header": {
+    "prometheus_collective": "Prometėjo kolektyvas",
+    "services": "Paslaugos",
+    "benefit": "Nauda",
+    "portfolio": "Portfolio",
+    "about-us": "Apie mus"
+  },
+  "Footer": {}
+}
