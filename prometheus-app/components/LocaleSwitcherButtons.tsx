@@ -1,15 +1,17 @@
 "use client";
 
 import { useParams } from "next/navigation";
-import { ChangeEvent, ReactNode, useTransition } from "react";
+import { useTransition } from "react";
 import { useRouter, usePathname } from "../navigation";
 import { locales } from "../navigation";
+import { useLocale } from "next-intl";
 
 export default function LocaleSwitcherSelect() {
   const router = useRouter();
   const [isPending, startTransition] = useTransition();
   const pathname = usePathname();
   const params = useParams();
+  const locale = useLocale();
 
   function changeLocale(nextLocale: string) {
     startTransition(() => {
@@ -26,6 +28,7 @@ export default function LocaleSwitcherSelect() {
   return (
     <label>
       {locales.map((cur) => (
+        cur != locale &&
         <button onClick={() => changeLocale(cur)} disabled={isPending}>{cur}</button>
       ))}
     </label>
