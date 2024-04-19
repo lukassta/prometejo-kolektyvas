@@ -1,5 +1,5 @@
 import { useTranslations } from "next-intl";
-import LocaleSwitcher from "./LocaleSwitcher";
+import LocaleSwitcherButtons from "./LocaleSwitcherButtons";
 
 export default function Header() {
   const t = useTranslations("Header");
@@ -8,7 +8,7 @@ export default function Header() {
     <header>
       <h1>{t("prometheus_collective")}</h1>
       <nav>Nav bar</nav>
-      <LocaleSwitcher />
+      <LocaleSwitcherButtons />
     </header>
   );
 }
