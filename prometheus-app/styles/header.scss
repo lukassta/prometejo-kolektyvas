@@ -1,0 +1,44 @@
+.header {
+        width: 100%;
+        height: 100px;
+        background-color: blue;
+        color: white;
+        display: flex;
+        align-items: center;
+
+        .logo {
+            height: calc(100% - 24px);
+            width: auto;
+            padding: 12px 24px;
+        }
+
+        .menu {
+            margin-left: auto;
+            display: flex;
+            align-items: center;
+            
+            * {
+                position: relative;
+                display: flex;
+                align-items: center;
+                text-transform: uppercase;
+                margin: 0px 24px;
+            }
+            
+            img
+            {
+                margin-right: 36px;
+                transition-duration: 1000ms;
+                cursor: pointer;
+            }
+
+            img:hover {
+            filter: drop-shadow(0 0 0.75rem black);
+            }
+        }
+    }
+
+@media (max-width: 1023px)
+{
+
+}

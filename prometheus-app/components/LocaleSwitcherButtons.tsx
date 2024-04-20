@@ -1,10 +1,14 @@
 "use client";
 
+import Image from 'next/image';
+
 import { useParams } from "next/navigation";
 import { useTransition } from "react";
 import { useRouter, usePathname } from "../navigation";
 import { locales } from "../navigation";
 import { useLocale } from "next-intl";
+
+import "styles/globals.scss";
 
 export default function LocaleSwitcherSelect() {
   const router = useRouter();
@@ -24,13 +28,19 @@ export default function LocaleSwitcherSelect() {
       );
     });
   }
+    
+    // Define an array of objects containing name and flag source
+    const flagImages = [
+        { src: '/Flag_of_the_United_Kingdom.png' },
+        { src: '/Flag_of_Lithuania.png' }
+    ];
 
   return (
-    <label>
-      {locales.map((cur) => (
+    <>
+      {locales.map((cur, index) => (
         cur != locale &&
-        <button onClick={() => changeLocale(cur)} disabled={isPending}>{cur}</button>
+        <Image className="flag" alt="" src={flagImages[index].src} width={400} height={400} onClick={() => changeLocale(cur)}></Image>
       ))}
-    </label>
+    </>
   );
 }
