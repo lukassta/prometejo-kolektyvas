@@ -11,8 +11,10 @@ export default function Header() {
 
   return (
     <header className="header">
-      <img className="logo" src="logo.png" alt=""></img>
-      <h1>{t("prometheus_collective")}</h1>
+      <Link href="/">
+        <img className="logo" src="logo.png" alt=""></img>
+        <h1>{t("prometheus_collective")}</h1>
+      </Link>
       <nav className="menu">
         <Link href="/services">{t("services")}</Link>
         <Link href="/benefit">{t("benefit")}</Link>
