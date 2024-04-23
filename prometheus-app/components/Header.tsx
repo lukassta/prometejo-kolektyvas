@@ -1,11 +1,13 @@
 import Image from "next/image";
+
 import { useTranslations } from "next-intl";
-import LocaleSwitcherButtons from "./LocaleSwitcherButtons";
-import "styles/header.scss";
 import { Link } from "../navigation";
+
+import LocaleSwitcherButtons from "./LocaleSwitcherButtons";
 
 import logo from "public/logo.png";
 
+import "styles/header.scss";
 //Assets
 //import logo from "public/logo.png";
 
