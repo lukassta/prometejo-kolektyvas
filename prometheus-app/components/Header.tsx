@@ -1,6 +1,7 @@
 import { useTranslations } from "next-intl";
 import LocaleSwitcherButtons from "./LocaleSwitcherButtons";
 import "styles/header.scss";
+import { Link } from "../navigation";
 
 //Assets
 //import logo from "public/logo.png";
@@ -13,14 +14,12 @@ export default function Header() {
       <img className="logo" src="logo.png" alt=""></img>
       <h1>{t("prometheus_collective")}</h1>
       <div className="menu">
-        <span>PASLAUGOS</span>
-        <span>NAUDA</span>
-        <span>PROCESAS</span>
-        <span>APIE MUS</span>
+        <Link href="/services">{t("services")}</Link>
+        <Link href="/bene">{t("benefit")}</Link>
+        <Link href="/process">{t("process")}</Link>
+        <Link href="/about-us">{t("about-us")}</Link>
         <LocaleSwitcherButtons />
       </div>
-      
-      
     </header>
   );
 }
