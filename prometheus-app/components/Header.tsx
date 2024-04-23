@@ -15,7 +15,7 @@ export default function Header() {
       <h1>{t("prometheus_collective")}</h1>
       <div className="menu">
         <Link href="/services">{t("services")}</Link>
-        <Link href="/bene">{t("benefit")}</Link>
+        <Link href="/benefit">{t("benefit")}</Link>
         <Link href="/process">{t("process")}</Link>
         <Link href="/about-us">{t("about-us")}</Link>
         <LocaleSwitcherButtons />
