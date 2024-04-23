@@ -13,13 +13,13 @@ export default function Header() {
     <header className="header">
       <img className="logo" src="logo.png" alt=""></img>
       <h1>{t("prometheus_collective")}</h1>
-      <div className="menu">
+      <nav className="menu">
         <Link href="/services">{t("services")}</Link>
         <Link href="/benefit">{t("benefit")}</Link>
         <Link href="/process">{t("process")}</Link>
         <Link href="/about-us">{t("about-us")}</Link>
         <LocaleSwitcherButtons />
-      </div>
+      </nav>
     </header>
   );
 }
