@@ -29,15 +29,6 @@ export default function LocaleSwitcherSelect() {
     });
   }
 
-  // Define an array of objects containing name and flag source
-  const flagImages = [
-    {
-      src: "/Flag_of_the_United_Kingdom.png",
-      alt: "Flag of the United Kingdom",
-    },
-    { src: "/Flag_of_Lithuania.png", alt: "Flag of Lithuania" },
-  ];
-
   return (
     <>
       {locales.map(
