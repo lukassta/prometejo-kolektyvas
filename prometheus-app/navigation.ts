@@ -8,6 +8,18 @@ export const localePrefix = "always"; // Default
 
 export const pathnames = {
   "/": "/",
+  "/services": {
+    en: "/services",
+    lt: "/pasalugos",
+  },
+  "/benefit": {
+    en: "/benefit",
+    lt: "/nauda",
+  },
+  "/process": {
+    en: "/process",
+    lt: "/procesas",
+  },
   "/about-us": {
     en: "/about-us",
     lt: "/apie-mus",
