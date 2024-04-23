@@ -17,7 +17,11 @@ export default function Header() {
   return (
     <header className="header">
       <Link href="/">
-        <Image className="logo" src={logo} alt="" />
+        <Image
+          className="logo"
+          src={logo}
+          alt="Logo of prometheus collective"
+        />
         <h1>{t("prometheus_collective")}</h1>
       </Link>
       <nav className="menu">

@@ -1,6 +1,6 @@
 "use client";
 
-import Image from 'next/image';
+import Image from "next/image";
 
 import { useParams } from "next/navigation";
 import { useTransition } from "react";
@@ -28,19 +28,31 @@ export default function LocaleSwitcherSelect() {
       );
     });
   }
-    
-    // Define an array of objects containing name and flag source
-    const flagImages = [
-        { src: '/Flag_of_the_United_Kingdom.png' },
-        { src: '/Flag_of_Lithuania.png' }
-    ];
+
+  // Define an array of objects containing name and flag source
+  const flagImages = [
+    {
+      src: "/Flag_of_the_United_Kingdom.png",
+      alt: "Flag of the United Kingdom",
+    },
+    { src: "/Flag_of_Lithuania.png", alt: "Flag of Lithuania" },
+  ];
 
   return (
     <>
-      {locales.map((cur, index) => (
-        cur != locale &&
-        <Image className="flag" alt="" src={flagImages[index].src} width={400} height={400} onClick={() => changeLocale(cur)}></Image>
-      ))}
+      {locales.map(
+        (cur, index) =>
+          cur != locale && (
+            <Image
+              className="flag"
+              src={flagImages[index].src}
+              alt={flagImages[index].alt}
+              width={400}
+              height={400}
+              onClick={() => changeLocale(cur)}
+            ></Image>
+          )
+      )}
     </>
   );
 }
