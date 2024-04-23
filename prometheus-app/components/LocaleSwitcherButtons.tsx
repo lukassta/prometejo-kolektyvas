@@ -45,8 +45,8 @@ export default function LocaleSwitcherSelect() {
           cur != locale && (
             <Image
               className="flag"
-              src={flagImages[index].src}
-              alt={flagImages[index].alt}
+              src={`/flag/${cur}_flag.png`}
+              alt={`Flag of ${cur} locale`}
               width={400}
               height={400}
               onClick={() => changeLocale(cur)}
